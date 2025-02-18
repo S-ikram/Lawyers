@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Federo&family=Oxanium:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+* {
+
+    font-family: 'playfair Display', itallc;
+}
+
+.sp {
+    animation-name: sp;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sp {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    
+}
+@media only screen and (max-width:575px)  {
+    .ak{
+        height: 80vh;
+        
+    }
+}
+
+
+
+
+
+.corosol {
+    background-color: white;
+    padding: 12px 24px;
+    color: black;
+}
+
+
+.btn-outline-success {
+
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.621);
+    padding: 10px 28px;
+    color: white;
+    border-radius: 30px;
+
+}
+
+.btn-outline-success:hover {
+
+    background-color: white;
+    transition: .3s linear;
+    color: black;
+
+
+
+}
+
+/* SECOND - SECTION */
+.second-key {
+    animation-timeline: score();
+    animation: second-key;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes second-key {
+    0% {
+        transform: translateY(100px);
+
+
+        transition: .3s linear;
+    }
+
+    100% {
+        transform: translateX(100px);
+
+        transform: rotate(-20deg);
+    }
+}
+
+/* From Uiverse.io by adamgiebl */
+button {
+    font-family: inherit;
+    font-size: 20px;
+    background: rgb(88, 91, 99);
+    color: rgb(255, 255, 255);
+    padding: 14px 38px;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 40px !important;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+button span {
+    display: block;
+    margin-left: 0.3em;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+button:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+button:hover span {
+    transform: translateX(9em);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+    from {
+        transform: translateY(0.1em);
+    }
+
+    to {
+        transform: translateY(-0.1em);
+    }
+}
+
+@media only screen and (max-width:600px) {
+
+    .second-key {
+        right: 290px;
+
+
+    }
+
+}
+
+/* FOR - SECTION  */
+
+
+.feed-card {
+    animation-name: feedslider;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: relative;
+
+}
+
+
+.feed-img {
+    position: relative;
+}
+
+
+
+.feed-card:hover .feed-img:before {
+    bottom: 0;
+    transition: .3s linear;
+}
+
+@keyframes feedslider {
+    0% {
+        transform: translateX(0);
+    }
+
+    29% {
+        transform: translateX(0);
+    }
+
+    33% {
+        transform: translateX(-100%);
+    }
+
+    60% {
+        transform: translateX(-100%);
+    }
+
+    67% {
+        transform: translateX(-200%);
+    }
+
+    95% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.lines-f {
+    width: 20px !important;
+    height: 18px !important;
+    border: 3px solid white;
+}
+
+.lines-f1 {
+    animation-name: linesanime;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.lines-f2 {
+    animation-name: linesanime;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 3.4s;
+}
+
+.lines-f3 {
+    animation-name: linesanime;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 7s;
+}
+
+@keyframes linesanime {
+    0% {
+        border-color: white;
+    }
+
+    8% {
+        border-color: #1c2d37;
+    }
+
+    32% {
+        border-color: #1c2d37;
+    }
+
+    35% {
+        border-color: #ffffff;
+    }
+
+    100% {
+        border-color: #ffffff;
+    }
+
+}
+
+/* SLIDER */
+.slider {
+    animation-name: slider;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slider {
+    0% {
+        transform: translateX(0);
+    }
+
+    33% {
+        transform: translateX(-100%);
+    }
+
+    66% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(-300%);
+    }
+}
+
+
+
+.data {
+    animation-name: data;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes data {
+    0% {
+        transform: rotate(-360deg);
+    }
+
+
+
+
+}
+
+
+@media only screen and (max-width:600px) {
+    .slider-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+/*  */
+
+
+.for-card {
+    height: 50px;
+    background-image: url(infobox_5.webp);
+    background-size: cover;
+
+}
+
+.for-box {
+    height: 0px;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.for-card:hover .for-box {
+    height: 70px;
+    opacity: 1;
+    transition: .3s linear;
+
+}
+
+.for-card:hover {
+    height: 120px;
+}
+
+@media only screen and (max-width:600px) {
+    .sevan-box {
+        margin-left: 190px;
+
+
+    }
+}
+
+
+
+
+/* EAT - SECTION */
+.eat-hov:hover {
+    color: rgb(244, 244, 75);
+    transition: .3s linear;
+}
+
+.icon:hover {
+    margin-top: -20px;
+    color: blue;
+    transition: .2s linear;
+}
+
+.google {
+    color: white;
+    /* animation: p-anime 15s linear infinite; */
+    /* transform: translateY(34%); */
+    /* position: absolute; */
+    font-family: outfit;
+    /* color: transparent; */
+    -webkit-text-fill-color: transparent;
+    font-size: 12vw;
+    opacity: 50%;
+    right: -50px;
+    font-style: italic;
+    -webkit-text-stroke: 10px rgba(214, 213, 208, 0.161);
+    position: absolute;
+    overflow: hidden;
+
+}
+
+
+
+
+.google {
+    position: absolute;
+    bottom: -200px;
+    left: 0;
+    animation-name: google;
+    animation-timeline: scroll();
+    z-index: 1111;
+}
+
+@keyframes google {
+    70% {
+        left: 0;
+    }
+
+    80% {
+        left: 20%;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .nine-box {
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+    }
+}
+
+
+/* TEN - SECTION */
+.ten-write {
+    top: 290px;
+    left: 25px;
+    position: absolute;
+    text-align: start;
+}
+
+.ten-write:hover {
+    color: #B98E44;
+    transition: .3s linear;
+}
+
+.ten-box {
+    height: 20px;
+    position: absolute;
+    bottom: 15px;
+}
+
+.ten-card {
+    height: 430px;
+    position: relative;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.31);
+}
+
+
+/* FOOTER - SECTION */
+.footer-bun {
+    background-color: white;
+    color: #1c2d37;
+    font-family: arial;
+    font-size: 15px;
+    font-weight: bold;
+}
